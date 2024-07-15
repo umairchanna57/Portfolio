@@ -8473,7 +8473,6 @@ h1, h2, h3, h4, h5,
 
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
             position: absolute;
-    
             top: 0;
             bottom: 0;
             left: 0;
@@ -8488,7 +8487,7 @@ h1, h2, h3, h4, h5,
               width: 100%;
               z-index: 0; }
               .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
-                opacity: 0.1; }
+                opacity: .3; }
               .owl-carousel.home-slider .slider-item .slider-text .one-third:after {
                 opacity: 0; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-forth {
@@ -8505,7 +8504,7 @@ h1, h2, h3, h4, h5,
               margin: 0 auto; } }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-              width: 30%;
+              width: 100%;
               position: absolute;
               top: 0;
               left: 0;
@@ -8531,7 +8530,6 @@ h1, h2, h3, h4, h5,
           color: #000000;
           font-weight: 600;
           font-size: 14px;
-          margin-left: 100px;
           letter-spacing: 3px;
           text-transform: uppercase;
           color: #ffbd39; }
@@ -8542,7 +8540,6 @@ h1, h2, h3, h4, h5,
           font-size: 60px;
           color: #fff;
           line-height: 1.2;
-          padding-left: 100px;
           font-weight: 800; }
           .owl-carousel.home-slider .slider-item .slider-text h1 span {
             font-weight: 800;
@@ -8556,14 +8553,10 @@ h1, h2, h3, h4, h5,
               font-size: 40px; } }
         .owl-carousel.home-slider .slider-item .slider-text h2 {
           font-size: 30px;
-          font-weight: 400;
-          margin-left: 100px; 
-        }
+          font-weight: 400; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h2 {
-              color: #fff; 
-              
-            } }
+              color: #fff; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
           color: rgba(0, 0, 0, 0.8);
           font-weight: 400; }
@@ -8733,9 +8726,7 @@ h1, h2, h3, h4, h5,
   .btn.btn-primary {
     background: #ffbd39;
     border: 1px solid #ffbd39 !important;
-    margin-left: 100px;
     color: #000000 !important; }
-
     .btn.btn-primary:hover {
       border: 1px solid #ffbd39 !important;
       background: #ffbd39 !important;
@@ -8787,9 +8778,8 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .ftco-about .img-about .img {
     display: block;
-    width: 60%;
-    height: 60%;
-    margin-left:110px;
+    height: 80%;
+    width: 80%;
     position: relative;
     z-index: 1; }
 
@@ -9014,31 +9004,8 @@ h1, h2, h3, h4, h5,
     transition: all 0.3s ease; }
     .project .text h3 {
       font-size: 20px; }
-     /* Styling for project text links */
-      /* Styling for project text links */
-.project .text h3 a {
-  color: #000; /* Black color for the link text */
-  text-decoration: none; /* Removes underline from the link */
-  font-weight: bold; /* Makes the link text bold */
-  font-family: 'Arial', sans-serif; /* Changes font style */
-  letter-spacing: 0.5px; /* Adds some space between letters */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
-  transition: all 0.3s ease; /* Smooth transition for all properties */
-}
-
-.project .text h3 a:hover {
-  color: #007BFF; /* Changes color to blue on hover */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow on hover */
-  transform: scale(1.05); /* Slightly increases size on hover */
-}
-
-/* Additional styling for h3 to complement the link styling */
-.project .text h3 {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  font-size: 1.5em; /* Adjusts font size */
-}
-
+      .project .text h3 a {
+        color: #fff; }
     .project .text span {
       color: rgba(255, 255, 255, 0.8);
       text-transform: uppercase;
@@ -9094,6 +9061,70 @@ textarea.form-control {
       padding-top: 5em;
       padding-bottom: 5em; } }
 
+
+/* Footer styling */
+.footer {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding */
+  background-color: #ffbd39; /* Light background color */
+  border-top: 1px solid #e1e1e1; /* Border at the top */
+  margin-top: 50px; /* Space above the footer */
+}
+
+/* Reserved rights text styling */
+.footer .reserved-rights {
+  color: #555; /* Dark gray color */
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size: 14px; /* Font size */
+  letter-spacing: 0.5px; /* Space between letters */
+  margin: 0; /* Remove default margin */
+}
+
+/* Footer styling */
+.footer {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding */
+  background-color: #ffbd39; /* Light background color */
+  border-top: 1px solid #e1e1e1; /* Border at the top */
+  margin-top: 50px; /* Space above the footer */
+}
+
+/* Reserved rights text styling */
+.footer .reserved-rights {
+  color: #555; /* Dark gray color */
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size: 14px; /* Font size */
+  letter-spacing: 0.5px; /* Space between letters */
+  margin: 0; /* Remove default margin */
+}
+
+
+/* Styling for project text links */
+.project .text h3 a {
+  color: #000; /* Black color for the link text */
+  text-decoration: none; /* Removes underline from the link */
+  font-weight: bold; /* Makes the link text bold */
+  font-family: 'Arial', sans-serif; /* Changes font style */
+  letter-spacing: 0.5px; /* Adds some space between letters */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.project .text h3 a:hover {
+  color: #007BFF; /* Changes color to blue on hover */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow on hover */
+  transform: scale(1.05); /* Slightly increases size on hover */
+}
+
+/* Additional styling for h3 to complement the link styling */
+.project .text h3 {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  font-size: 1.5em; /* Adjusts font size */
+}
+
+  
+      
 .ftco-animate {
   opacity: 0;
   visibility: hidden; }
@@ -9728,22 +9759,3 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-  
-  /* Footer styling */
-.footer {
-  text-align: center; /* Center the text */
-  padding: 20px; /* Add some padding */
-  background-color: #ffbd39; /* Light background color */
-  border-top: 1px solid #e1e1e1; /* Border at the top */
-  margin-top: 50px; /* Space above the footer */
-}
-
-/* Reserved rights text styling */
-.footer .reserved-rights {
-  color: #555; /* Dark gray color */
-  font-family: 'Arial', sans-serif; /* Font style */
-  font-size: 14px; /* Font size */
-  letter-spacing: 0.5px; /* Space between letters */
-  margin: 0; /* Remove default margin */
-}
